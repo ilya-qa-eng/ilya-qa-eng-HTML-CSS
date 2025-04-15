@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./normalize.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Илья Шехурдин</title>
+    <style>
+      body {
+        background: url('images/fon.jpg') center/cover no-repeat fixed;
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+        color: #4d4d4d;
+      }
+      
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+      
+      .header {
+        text-align: center;
+        padding: 2rem 0;
+      }
+      
+      .header__avatar {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #131212;
+      }
+      
+      .header__title {
+        color: hsl(0, 0%, 85%); /* Светло-серый */
+        margin: 1rem 0 0.5rem;
+        font-size: 2rem;
+      }
+      
+      .header__subtitle {
+        color: #e0e0e0;
+        margin: 0;
+        font-size: 1.2rem;
+      }
+      
+      .links {
+        background: #333333;
+        max-width: 700px; /* Шире на 100px */
+        margin: 2rem auto;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+      
+      .links__header {
+        color: #838181;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+      }
+      
+      .links__container {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .links__link {
+        background: rgba(255, 255, 255, 0.1);
+        margin-bottom: 1.2rem;
+        padding: 1.2rem;
+        border-radius: 5px;
+        transition: background 0.3s;
+      }
+      
+      .links__link:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      
+      .links__title {
+        color: #e0e0e0;
+        margin: 0 0 0.5rem;
+        font-size: 1rem;
+      }
+      
+      .links__link a {
+        color: #e0e0e0; /* Светло-серый как основной текст */
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+      
+      .links__link a:hover {
+        color: #555353;
+        text-decoration: underline;
+      }
+      
+      footer {
+        text-align: center;
+        padding: 2rem 0;
+      }
+      
+      .button-link {
+        background: #333333;
+        color: #141414;
+        border: none;
+        padding: 1rem 2.5rem;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      
+      .button-link:hover {
+        background: #c0bebe;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+      
+      .button-link:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <img src="avatar.jpg" alt="Аватар Ильи Шехурдина" class="header__avatar">
+      <h1 class="header__title">Илья Шехурдин</h1>
+      <h3 class="header__subtitle">qa engineer</h3>
+    </header>
+    <main>
+      <section class="links">
+        <h2 class="links__header">Всегда на связи</h2>
+        <ul class="links__container">
+          <li class="links__link">
+            <p class="links__title">Телеграм</p>
+            <a class="links__link" href="https://t.me/iesyssss">@iesyssss</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">Эл. почта</p>
+            <a class="links__link" href="mailto:ilya.shex@yandex.ru">ilya.shex@yandex.ru</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">Гит</p>
+            <a class="links__link" href="https://github.com/ilya-qa-eng">github.com/ilya-qa-eng/</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <button type="button" class="button-link">Кредо</button>
+    </footer>
+    <script type="text/javascript" src="js.js"></script>
+  </body>
+</html>
